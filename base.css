@@ -7,16 +7,24 @@
   padding: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
 :root {
   scroll-behavior: smooth;
   font-size: 16px;
 
   /* Primary */
-  --dark-red: #bc4747;
   --red: #ff5e5e;
+  --red-hover: #ff8686;
 
   /* Neutral */
   --black: #242942;
+  --black-75: hsla(230, 29%, 20%, 0.75);
+  --black-50: hsla(230, 29%, 20%, 0.5);
   --gray: #e7ecf1;
 
   /* Typography */

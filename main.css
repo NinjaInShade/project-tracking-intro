@@ -46,7 +46,7 @@
 }
 
 #login-link a {
-  color: hsla(230, 29%, 20%, 0.5);
+  color: var(--black-50);
 }
 
 .navbar-hamburger {
@@ -55,6 +55,70 @@
   border: none;
   cursor: pointer;
   display: none;
+}
+
+.header {
+  margin: 162px 0 178px 0;
+  padding: 0 32px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.header-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-tag,
+.header-lead {
+  text-transform: uppercase;
+}
+
+.header-tag {
+  color: #fff;
+  background-color: var(--black);
+  border-radius: 12.5px;
+  margin-right: 15px;
+  padding: 5px 11px;
+  font-weight: 900;
+}
+
+.header-lead {
+  color: var(--black-50);
+}
+
+.header-title {
+  text-transform: uppercase;
+  color: var(--black);
+  margin: 16px 0 32px 0;
+}
+
+.header-subtitle {
+  color: var(--black-75);
+  margin-bottom: 64px;
+}
+
+.header-btn-description {
+  text-transform: uppercase;
+  color: var(--black-50);
+  margin-left: 24px;
+}
+
+.header-img {
+  position: absolute;
+  width: auto;
+  max-height: 455px;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 55%;
 }
 
 @media (max-width: 550px) {
