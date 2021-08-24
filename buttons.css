@@ -3,4 +3,6 @@
   outline: none;
   border: none;
   cursor: pointer;
+  font-size: var(--button);
+  letter-spacing: var(--button-letter-spacing);
 }
