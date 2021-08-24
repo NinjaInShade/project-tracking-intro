@@ -1,3 +1,25 @@
+.overall-container {
+  position: relative;
+}
+
+.overall-container::before {
+  position: absolute;
+  content: '';
+  background-color: var(--background);
+  border-bottom-left-radius: 60px;
+  z-index: 0;
+  width: 48.5%;
+  height: 53%;
+  right: 0;
+  top: 0;
+}
+
+nav,
+main {
+  position: relative;
+  z-index: 1;
+}
+
 .navbar {
   padding: 64px 32px 0 32px;
 }
@@ -58,8 +80,7 @@
 }
 
 .header {
-  margin: 162px 0 178px 0;
-  padding: 0 32px;
+  padding: 162px 32px 178px 32px;
 }
 
 .header-container {
