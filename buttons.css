@@ -20,3 +20,9 @@
   transition: all 0.2s ease-in-out;
   background-color: var(--red-hover);
 }
+
+@media (max-width: 550px) {
+  .btn-primary {
+    padding: 12px 25px;
+  }
+}

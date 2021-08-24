@@ -142,7 +142,52 @@ main {
   left: 55%;
 }
 
+@media (max-width: 950px) {
+  .header {
+    padding: 600px 32px 92px 32px;
+  }
+
+  .header-img {
+    top: -75%;
+    left: 3px;
+  }
+}
+
 @media (max-width: 550px) {
+  .navbar {
+    padding-top: 38px;
+  }
+
+  .overall-container::before {
+    height: 425px;
+  }
+
+  .navbar-logo-container {
+    height: 24px;
+    width: 24px;
+  }
+
+  .header {
+    padding: 380px 32px 92px 32px;
+  }
+
+  .header-img {
+    max-height: 240px;
+    top: -78%;
+  }
+
+  .header-title {
+    margin: 16px 0;
+  }
+
+  .header-subtitle {
+    margin-bottom: 27px;
+  }
+
+  .header-btn-description {
+    margin-left: 20px;
+  }
+
   .navbar-links {
     display: none;
   }
