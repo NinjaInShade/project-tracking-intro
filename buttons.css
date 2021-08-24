@@ -16,7 +16,8 @@
   padding: 15px 32px;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   transition: all 0.2s ease-in-out;
   background-color: var(--red-hover);
 }
