@@ -43,10 +43,13 @@ Notes:
 - Semantic HTML5 markup
 - CSS custom properties/vars
 - Desktop-first workflow
+- Vanilla javascript
 
 ### What I learned
 
-Not done yet.
+I practiced my positioning a lot, with the image especially.
+
+Another thing I had to take careful care of is z index of multiple elemtents so things stacked correctly, whilst keeping the code maintainable and not using over the top z index's like 9999 etc. I had to ensure the background rectangle stayed underneath everything, while the mobile navigation was over the top of everything, which I had to focus to do as there positions in the HTML were different (position in html creates different stacking contexts).
 
 ## Author
 
