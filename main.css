@@ -17,6 +17,13 @@
 nav,
 main {
   position: relative;
+}
+
+nav {
+  z-index: 2;
+}
+
+main {
   z-index: 1;
 }
 
@@ -28,6 +35,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   margin: 0 auto;
   max-width: var(--max-width);
 }
@@ -70,7 +78,6 @@ main {
 #login-link a {
   color: var(--black-50);
 }
-
 .navbar-hamburger {
   outline: none;
   background: none;
@@ -137,9 +144,54 @@ main {
   position: absolute;
   width: auto;
   max-height: 455px;
+  z-index: 1;
   transform: translateY(-50%);
   top: 50%;
   left: 55%;
+}
+
+#close-icon {
+  display: none;
+}
+
+.navbar-active #close-icon {
+  display: block;
+}
+
+.navbar-active #open-icon {
+  display: none;
+}
+
+.navbar-active .navbar-links {
+  display: block !important;
+  position: absolute;
+  background: #fff;
+  flex-direction: column;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  padding: 24px;
+  width: 100%;
+  top: 75px;
+  left: 0;
+}
+
+.navbar-active .navbar-link {
+  text-align: center;
+  margin: 0;
+}
+
+.navbar-active .navbar-link:nth-child(2) {
+  margin: 24px 0;
+}
+
+.navbar-active #login-link {
+  margin: 0;
+}
+
+.navbar-active .navbar-mobile-seperator {
+  background-color: var(--black-15);
+  margin: 24px 0;
+  width: 100%;
+  height: 1px;
 }
 
 @media (max-width: 950px) {

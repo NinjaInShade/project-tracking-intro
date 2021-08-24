@@ -25,6 +25,7 @@ body {
   --black: #242942;
   --black-75: hsla(230, 29%, 20%, 0.75);
   --black-50: hsla(230, 29%, 20%, 0.5);
+  --black-15: hsla(230, 29%, 20%, 0.15);
 
   --background: #edf2f6;
   --gray: #e7ecf1;
